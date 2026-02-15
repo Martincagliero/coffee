@@ -101,6 +101,92 @@
   .backface-hidden {
     backface-visibility: hidden;
   }
+
+  /* Cinematographic Effects */
+  .shadow-cinematic {
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.8),
+      0 40px 80px rgba(0, 0, 0, 0.6),
+      0 60px 120px rgba(0, 0, 0, 0.4);
+  }
+
+  .shadow-glow-amber {
+    box-shadow: 
+      0 0 40px rgba(180, 100, 20, 0.3),
+      0 0 80px rgba(180, 100, 20, 0.15),
+      0 20px 40px rgba(0, 0, 0, 0.6);
+  }
+
+  .shadow-glow-cream {
+    box-shadow: 
+      0 0 30px rgba(200, 155, 117, 0.2),
+      0 0 60px rgba(200, 155, 117, 0.1),
+      0 20px 40px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Depth of Field */
+  .blur-depth-1 {
+    filter: blur(0px);
+  }
+
+  .blur-depth-2 {
+    filter: blur(2px);
+  }
+
+  .blur-depth-3 {
+    filter: blur(4px);
+  }
+
+  /* Premium Borders */
+  .border-premium {
+    border: 1px solid rgba(200, 155, 117, 0.3);
+  }
+
+  .border-premium-hover {
+    border: 1px solid rgba(200, 155, 117, 0.5);
+    transition: all 0.3s ease;
+  }
+
+  /* Cinematic Text Effects */
+  .text-cinematographic {
+    text-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.8),
+      0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Floating Animation */
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  @keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .floating-slow {
+    animation: floating-slow 6s ease-in-out infinite;
+  }
+
+  @keyframes floating-slow {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-30px); }
+  }
+
+  /* Particle Effects */
+  .particle-light {
+    background: radial-gradient(circle, rgba(200, 155, 117, 0.8), transparent);
+  }
+
+  /* Premium Hover States */
+  .hover-elevate {
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .hover-elevate:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+  }
 }
 
 /* Custom Scrollbar */

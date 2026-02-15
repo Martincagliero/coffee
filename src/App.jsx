@@ -7,6 +7,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Preloader from './components/Preloader';
 import Hero from './components/Hero';
 import Gallery from './components/Gallery';
+import Story from './components/Story';
+import Product from './components/Product';
+import Experience from './components/Experience';
 import Menu from './components/Menu';
 import Location from './components/Location';
 import Contact from './components/Contact';
@@ -58,6 +61,15 @@ function App() {
 
         {/* Gallery Section */}
         <Gallery />
+
+        {/* Story Section */}
+        <Story />
+
+        {/* Product Section */}
+        <Product />
+
+        {/* Experience Section */}
+        <Experience />
 
         {/* Menu Section */}
         <Menu />
