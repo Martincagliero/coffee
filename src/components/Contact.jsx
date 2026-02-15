@@ -65,25 +65,10 @@ const Contact = () => {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative py-24 px-4 overflow-hidden bg-coffee-900"
+      className="relative py-48 md:py-64 px-4 overflow-hidden bg-coffee-900"
     >
-      {/* Background Effects */}
-      <motion.div
-        className="absolute top-0 right-0 w-1/2 h-1/2 bg-coffee-500/10 rounded-full blur-3xl"
-        animate={{
-          scale: [1, 1.3, 1],
-          x: [0, 50, 0],
-        }}
-        transition={{ duration: 20, repeat: Infinity }}
-      />
-      <motion.div
-        className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-coffee-600/10 rounded-full blur-3xl"
-        animate={{
-          scale: [1, 1.2, 1],
-          x: [0, -50, 0],
-        }}
-        transition={{ duration: 25, repeat: Infinity }}
-      />
+      {/* Subtle Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-coffee-800 to-coffee-900" />
 
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Section Header */}

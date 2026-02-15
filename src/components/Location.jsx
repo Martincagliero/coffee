@@ -12,7 +12,7 @@ const Location = () => {
     <section
       id="location"
       ref={sectionRef}
-      className="relative py-32 md:py-48 px-4 md:px-8 overflow-hidden bg-coffee-950"
+      className="relative py-48 md:py-64 px-4 md:px-8 overflow-hidden bg-coffee-950"
     >
       {/* Subtle Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-coffee-900 to-coffee-950" />
@@ -21,7 +21,7 @@ const Location = () => {
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
-          className="mb-24 md:mb-32"
+          className="mb-32 md:mb-48"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 1 }}

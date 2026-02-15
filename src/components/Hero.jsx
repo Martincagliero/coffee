@@ -24,8 +24,8 @@ const Hero = () => {
           <source src="/assets/video/location.mp4" type="video/mp4" />
         </video>
 
-        {/* Overlay Minimalista */}
-        <div className="absolute inset-0 bg-gradient-to-b from-coffee-900/40 via-coffee-900/50 to-coffee-900/70" />
+        {/* Overlay Premium - Más profundo */}
+        <div className="absolute inset-0 bg-gradient-to-b from-coffee-950/50 via-coffee-950/60 to-coffee-950/80" />
       </div>
 
       {/* Contenido - Tipografía Dominante */}
